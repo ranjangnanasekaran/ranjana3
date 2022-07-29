@@ -10,7 +10,9 @@ spec:
   # an external load-balanced IP for the frontend service.
   type: LoadBalancer
   ports:
-  - port: 80
+  - protocol: "TCP"
+    port: 80
+    targetPort: 80
   selector:
     app.kubernetes.io/name: guestbook
     app.kubernetes.io/component: frontend
