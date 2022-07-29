@@ -7,7 +7,6 @@ spec:
     storage: 4Gi
   accessModes:
     - ReadWriteOnce
-    - ReadOnlyMany
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   hostPath:
