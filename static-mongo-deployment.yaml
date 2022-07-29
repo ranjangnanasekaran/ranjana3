@@ -31,8 +31,8 @@ spec:
         - containerPort: 27017
         volumeMounts:
         - mountPath: /data
-          name: mongo-hp-pvc
+          name: local-storage
       volumes:
-        - name: mongo-hp-pvc
+        - name: local-storage
           persistentVolumeClaim:
-            claimName: mongo-hp-pvc
+            claimName: local-storage

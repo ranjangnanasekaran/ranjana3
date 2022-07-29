@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: mongo-hp-pvc
-  #annotations:
-    #volume.beta.kubernetes.io/storage-class: gp2
+  name: local-storage
+  annotations:
+    volume.beta.kubernetes.io/storage-class: gp2
 spec:
-  storageClassName: localstorage
+  storageClassName: local-storage
   accessModes:
   - ReadWriteOnce
   resources:
